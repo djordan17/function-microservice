@@ -1,7 +1,7 @@
 # function-microservice
 Applicación Dymmu que devuelve la información de una Empresa.
 
-### Tech
+### Tecnologias
 
 Function-microservice usa los siguientes proyectos:
 
