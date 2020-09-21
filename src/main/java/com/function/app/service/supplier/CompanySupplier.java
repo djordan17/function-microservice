@@ -20,7 +20,7 @@ public class CompanySupplier implements Supplier<CompanyRs> {
 	public CompanyRs get() {
 		CompanyRq companyRq = new CompanyRq();
 		companyRq.setName("Coca Cola");
-		return companyService.getInformationByName(companyRq);
+		return companyService.createCompany(companyRq);
 	}
 
 }

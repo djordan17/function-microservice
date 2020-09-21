@@ -10,15 +10,15 @@ import com.function.app.service.CompanyService;
 
 import lombok.AllArgsConstructor;
 
-@Component
+@Component(value = "company")
 @AllArgsConstructor
-public class CompanyFunction implements Function<CompanyRq, CompanyRs>{
-	
+public class CompanyFunction implements Function<CompanyRq, CompanyRs> {
+
 	private CompanyService companyService;
 
 	@Override
 	public CompanyRs apply(CompanyRq request) {
-		return companyService.getInformationByName(request);
+		return companyService.createCompany(request);
 	}
 
 }

@@ -19,7 +19,7 @@ public class CompanyConsumer implements Consumer<CompanyRq> {
 
 	@Override
 	public void accept(CompanyRq companyRq) {
-		log.info("Company Information: {}", companyService.getInformationByName(companyRq).toString());
+		log.info("Company Information: {}", companyService.createCompany(companyRq).toString());
 	}
 
 }

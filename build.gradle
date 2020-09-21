@@ -23,13 +23,15 @@ ext {
 
 dependencies {
 
-	//compile 'org.springframework.cloud:spring-cloud-starter-function-web:3.0.1.RELEASE'
+	compile 'org.springframework.cloud:spring-cloud-starter-function-web:3.0.1.RELEASE'
 	
 	compile 'org.springframework.cloud:spring-cloud-function-adapter-aws:3.0.1.RELEASE'
 	
 	compile 'com.amazonaws:aws-lambda-java-events:2.2.7'
 	compile 'com.amazonaws:aws-lambda-java-core:1.2.0'
     compile 'com.amazonaws:aws-java-sdk-s3:1.11.557'
+    
+    compile 'org.apache.commons:commons-lang3:3.0'
     
     compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'

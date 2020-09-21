@@ -5,6 +5,6 @@ import com.function.app.model.CompanyRs;
 
 public interface CompanyService {
 	
-	CompanyRs getInformationByName(CompanyRq companyRq);
+	CompanyRs createCompany(CompanyRq companyRq);
 
 }
