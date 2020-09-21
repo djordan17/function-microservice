@@ -1,16 +1,19 @@
 package com.function.app.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Valid
 public class CompanyRq {
 
+	@NotNull
 	private String name;
 
 }

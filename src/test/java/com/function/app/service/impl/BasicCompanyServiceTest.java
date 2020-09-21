@@ -12,13 +12,13 @@ import com.function.app.service.CompanyService;
 
 public class BasicCompanyServiceTest {
 	
-	private CompanyService companyService = new BasicCompanyService();
+	private CompanyService companyService = new CompanyServiceImpl();
 	
 	@Test
 	public void shouldReturnCompanyInformatio_WhenInvokeNameCompanyParameter() {
 		CompanyRq request = new CompanyRq();
 		request.setName("Coca Cola");
-		CompanyRs companyRs = companyService.getInformationByName(request);
+		CompanyRs companyRs = companyService.createCompany(request);
 		assertEquals(LocalDate.now(), companyRs.getDate());
 	}
 
